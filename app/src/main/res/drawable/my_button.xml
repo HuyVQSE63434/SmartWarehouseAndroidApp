@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="20dip" />
+            <stroke android:width="1dip" android:color="#5e7974" />
+            <solid android:color="@color/greenMatcha" />
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <stroke android:color="@color/greenMatcha" android:width="3dp"/>
+            <solid android:color="@color/brown_white" />
+        </shape>
+    </item>
+</selector>-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="false">
+    <layer-list>
+        <!-- SHADOW -->
+        <item>
+            <shape>
+                <gradient android:startColor="@color/greenMatcha" android:endColor="@color/color_green" />
+                <!-- alttan gölge -->
+                <corners android:radius="5dp"/>
+            </shape>
+        </item>
+        <!-- BUTTON alttan gölge
+          android:right="5px" to make it round-->
+        <item
+            android:bottom="5dp"
+            >
+            <shape>
+                <padding android:bottom="5dp"/>
+                <solid android:color="@color/color_white" />
+
+                <!--<padding
+                    android:left="10dp"
+                    android:top="10dp"
+                    android:right="5dp"
+                    android:bottom="10dp"/>-->
+            </shape>
+        </item>
+    </layer-list>
+</item>
+
+<item android:state_pressed="true">
+    <layer-list>
+        <!-- SHADOW -->
+        <item>
+            <shape>
+                <solid android:color="@color/color_white"/>
+                <corners
+                    android:radius="5dp"/>
+            </shape>
+        </item>
+        <!-- BUTTON -->
+        <item
+            android:bottom="3dp"
+            >
+            <shape>
+                <padding android:bottom="5dp"/>
+                <solid android:color="@color/color_white" />
+                <corners
+                    android:radius="5dp"/>
+                <!--<padding
+                    android:left="10dp"
+                    android:top="10dp"
+                    android:right="5dp"
+                    android:bottom="10dp"/>-->
+            </shape>
+        </item>
+    </layer-list>
+</item>
+</selector>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_toolbar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/layout_nav_header"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:src="@mipmap/avt"
+        app:civ_border_color="@color/color_white"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My header title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_user_gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My header title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_user_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My header title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

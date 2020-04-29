@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Hóa đơn nhập/xuất kho">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_import"
+                    android:icon="@mipmap/ic_receipt"
+                    android:iconTint="@color/color_black"
+                    android:title="Đơn nhập hàng" />
+                <item
+                    android:id="@+id/nav_export"
+                    android:icon="@mipmap/ic_issue"
+                    android:iconTint="@color/color_black"
+                    android:title="Đơn xuất hàng" />
+                <!--<item
+                    android:id="@+id/nav_checkStore"
+                    android:icon="@mipmap/ic_check"
+                    android:iconTint="@color/color_black"
+                    android:title="Đơn kiểm hàng" />-->
+                <item
+                    android:id="@+id/nav_inventory"
+                    android:icon="@mipmap/ic_amount"
+                    android:iconTint="@color/color_black"
+                    android:title="Hàng tồn" />
+
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+    <!--<item
+        android:id="@+id/nav_setting"
+        android:icon="@mipmap/ic_setting"
+        android:iconTint="@color/color_black"
+        android:title="Cài đặt" />-->
+    <item
+        android:id="@+id/nav_log_out"
+        android:icon="@mipmap/ic_logout"
+        android:iconTint="@color/color_black"
+        android:title="Đăng xuất" />
+    </group>
+</menu>

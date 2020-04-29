@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Smart warehouse</string>
+    <string name="DetailMaterial"></string>
+    <string name="Inventory">Danh sách hàng</string>
+    <string name="facebook_app_id">298031641077220</string>
+    <string name="fb_login_protocol_scheme">fb298031641077220</string>
+    <string name="sign_in_google">Đăng nhập bằng Google</string>
+    <string name="sign_in_facebook">Đăng nhập bằng Facebook</string>
+    <string name="LOST_INTERNET">MẤT KẾT NỐI</string>
+    <string name="no_internet_message">Dây cáp bị cá mập cắn đứt rồi.\nVui lòng thử lại sau giây lát.</string>
+    <string name="TRY_AGAIN">THỬ LẠI</string>
+    <string name="STOCK">HÀNG TỒN</string>
+    <string name="HISTORY">LỊCH SỬ</string>
+    <string name="TRANSACTION">TẠO GIAO DỊCH</string>
+    <string name="RECEIPT">NHẬP HÀNG</string>
+    <string name="ISSUE">XUẤT HÀNG</string>
+    <string name="CHECK">KIỂM KHO</string>
+    <string name="NO">KHÔNG</string>
+    <string name="YES">ĐỒNG Ý</string>
+    <string name="are_you_sure_want_to_log_out">Bạn có muốn đăng xuất không?</string>
+    <string name="da_tao">ĐT</string>
+    <string name="hoan_tat">HT</string>
+    <string name="import_from_store">IM01</string>
+    <string name="import_from_outside_supplier">IM02</string>
+    <string name="import_after_sale">IMAF</string>
+    <string name="exchange">EC</string>
+    <string name="export_for_sale">EX01</string>
+    <string name="export_for_clearning_the_trash">EX02</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

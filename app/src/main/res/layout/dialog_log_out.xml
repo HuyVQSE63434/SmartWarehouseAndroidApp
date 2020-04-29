@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp300"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/radius_10"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp16"
+    android:paddingRight="@dimen/dp16">
+
+    <TextView
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp18"
+        android:layout_marginTop="@dimen/dp16"
+        android:gravity="center"
+        android:text=":-O"
+        android:textColor="@color/color_green"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_dialog_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        android:text="@string/are_you_sure_want_to_log_out"
+        android:textColor="@color/color_green"
+        android:textSize="@dimen/sp16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/color_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_dialog_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:text="@string/NO"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray" />
+
+        <Button
+            android:id="@+id/btn_dialog_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:text="@string/YES"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

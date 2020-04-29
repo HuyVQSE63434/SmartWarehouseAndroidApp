@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image23">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_home_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_cur_bottom">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:paddingRight="@dimen/dp16"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!--<ImageView
+                            android:layout_width="@dimen/dp50"
+                            android:layout_height="@dimen/dp50"
+                            android:src="@mipmap/ic_menu"
+                            android:id="@+id/btn_menu"
+                            android:padding="@dimen/dp10"/>-->
+
+
+                        <!--<TextView
+                            android:id="@+id/txt_tb_main_store"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="Store"
+                            android:textColor="@color/color_white"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+    -->
+                        <LinearLayout
+                            android:id="@+id/lnl_home_screen_staff_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <TextView
+                                android:id="@+id/txt_tb_main_employee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="Trang chủ"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_home_screen_notification"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:src="@mipmap/ic_noti"
+                        />
+                </FrameLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="@dimen/dp12"
+                    android:background="#B3ffffff"
+                    android:padding="@dimen/dp10"
+                    app:cardBackgroundColor="@color/whiteTextColor"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp12">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_weight="6"
+                            android:src="@mipmap/ic_shop" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp12"
+                            android:layout_marginBottom="@dimen/dp25"
+                            android:layout_weight="4"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_header_store"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="serif"
+                                android:text="Cửa hàng: Coffee quận 1 "
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_header_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="serif"
+                                android:text="Địa chỉ: 65 Ngô Đức Kế"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txt_header_staff"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="serif"
+                                android:text="Quản lý: Vũ Quang Huy"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_marginTop="-70dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Xuất hàng:"
+                        android:textColor="#cc9900"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ln_exchange"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_exchange"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Chuyển kho"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_export_to_sale"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_sell"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Xuất để bán"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_export_to_clear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_trash"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Hỏng mốc"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/ln_check_store"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <!--<ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_check_store"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="top"
+                                android:text="Kiểm kho"
+                                android:textSize="15sp" />-->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"></LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Nhập hàng:"
+                        android:textColor="#cc9900"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ln_import_from_store"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_ft"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Từ kho khác"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_import_from_out_side"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_truck"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Nhà cung ngoài"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_import_after_sale"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_af"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Sau khi bán"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Xuất hàng:"
+                        android:textColor="#cc9900"
+                        android:textSize="@dimen/sp22"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ln_export_to_sale"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp50"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_sell"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:text="Xuất hàng để bán" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_export_to_clear"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp50"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_trash"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Xuất hàng hỏng mốc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Kiểm kho:"
+                        android:textColor="#cc9900"
+                        android:textSize="@dimen/sp22"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ln_check_store"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp50"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_check"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:text="Kiểm kho hàng ngày" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Tình trạng kho:"
+                        android:textColor="#cc9900"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ln_his_import"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_receipt"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Nhập hàng"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_his_export"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_issue"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Xuất hàng"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_inventory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_inventory"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Hàng tồn"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Hàng Trong kho:"
+                        android:textColor="#cc9900"
+                        android:textSize="@dimen/sp22"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ln_inventory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_inventory"
+                                android:tint="@color/greenMatcha" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:autoSizeMaxTextSize="30sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:gravity="center"
+                                android:text="Hàng tồn trong kho"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"></LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>-->
+
+                <!--<Button
+                    android:id="@+id/btn_home_screen_transaction"
+                    android:layout_width="@dimen/dp250"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp32"
+                    android:background="@drawable/my_button"
+                    android:text="@string/TRANSACTION"
+                    android:textColor="@color/greenMatcha"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_home_screen_history"
+                    android:layout_width="@dimen/dp250"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/my_button"
+                    android:text="@string/HISTORY"
+                    android:textColor="@color/greenMatcha"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_home_screen_stock"
+                    android:layout_width="@dimen/dp250"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp32"
+                    android:background="@drawable/my_button"
+                    android:text="@string/STOCK"
+                    android:textColor="@color/greenMatcha"
+                    android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Tin tức:"
+                        android:textColor="#cc9900"
+                        android:textSize="@dimen/sp22"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/news_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_margin="@dimen/dp12"
+                        android:layout_marginBottom="@dimen/sp22"
+                        android:text="Mẹo vặt:"
+                        android:textColor="#cc9900"
+                        android:textSize="@dimen/sp22"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/trick_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

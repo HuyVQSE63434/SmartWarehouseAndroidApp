@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp328"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_weight="8"
+            android:background="@color/color_white"
+            android:src="@mipmap/ic_coffee"
+            android:tint="@color/greenMatcha" />
+
+        <Button
+            android:id="@+id/btn_export_for_sale"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/my_button"
+            android:text="Xuất kho để bán"
+            android:textColor="@color/greenMatcha"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_weight="8"
+            android:background="@color/color_white"
+            android:src="@mipmap/ic_ft"
+            android:tint="@color/greenMatcha" />
+
+        <Button
+            android:id="@+id/btn_export_for_clear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@drawable/my_button"
+            android:text="Xuất hàng hỏng mốc"
+            android:textColor="@color/greenMatcha"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
